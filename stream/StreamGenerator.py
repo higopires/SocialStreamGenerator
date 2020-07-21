@@ -49,7 +49,7 @@ client.on_message = on_message
 
 #ler o dataset
 uids = 'u00', 'u02', 'u04', 'u05', 'u08', 'u09', 'u10', 'u12', 'u13', 'u14', 'u17', 'u23', 'u27', 'u30', 'u31', 'u36', 'u51', 'u53', 'u56', 'u57', 'u59'
-uid = 'u27'
+uid = 'u04'
 conv_data = read_data(uid)
 convert_date(conv_data, columns=['start_timestamp', 'end_timestamp'])
 conv_data['week_group'] = conv_data['start_timestamp'].dt.to_period('W-THU')
